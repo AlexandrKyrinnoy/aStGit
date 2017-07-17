@@ -27,6 +27,16 @@
 		}
 	}
 	
+	function fnHello() {
+		var divContentEl = 	document.getElementById("divContent");
+		divContentEl.innerHTML = "Hello!";
+	}
+	
+	function fnBye() {
+		var divContentEl = 	document.getElementById("divContent");
+		divContentEl.innerHTML = "Bye..";
+	}
+	
 	
 </script>	
 	</head>
@@ -39,8 +49,18 @@
 		<br>
 		<button id="btnChangeBodyColor_3" onclick="fnChangeDocumentBodyBgColor(2)">Green</button>
 		<br>
+	</div>
+	<div id="divButtons" style="padding:10px; border:1px solid blue; margin-top:20px;">
+		<button id="btnHello" onclick="fnHello();">Hello</button>
+		<button id="btnBye" onclick="fnBye();">Bye</button>
 		
 	</div>
+	
+	<div id="divContent" style="padding:10px; border:1px solid gray; margin-top:50px;">
+	
+	</div>
+	
+	
 
 </body>
 </html>
