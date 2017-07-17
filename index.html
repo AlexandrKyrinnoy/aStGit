@@ -6,15 +6,39 @@
 			
 	function pageInit() {
 		
-		document.body.bgColor = "#ADCEFE";
+		document.body.bgColor = "#EEE";
 	}
 	
+	function fnChangeDocumentBodyBgColor(arg) {
+		switch (arg) {
+			case 0:
+				document.body.bgColor = "#ADCEFE";
+			breack;
+			case 1:
+				document.body.bgColor = "#D8D8D8";
+			breack;
+			case 2:
+				document.body.bgColor = "#CEF6CE";
+			break;
+			default: 
+				document.body.bgColor = "#FFFFFF";
+			break;
+		}
+	}
 	
 	
 </script>	
 	</head>
 <body>
-
+	<div style="padding:10px;">
+		<button id="btnChangeBodyColor_1" onclick="fnChangeDocumentBodyBgColor(0)">Sky</button>
+		<br>
+		<button id="btnChangeBodyColor_2" onclick="fnChangeDocumentBodyBgColor(1)">Gray</button>
+		<br>
+		<button id="btnChangeBodyColor_3" onclick="fnChangeDocumentBodyBgColor(2)">Green</button>
+		<br>
+		
+	</div>
 
 </body>
 </html>
