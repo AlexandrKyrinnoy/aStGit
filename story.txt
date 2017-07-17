@@ -1,0 +1,7 @@
+***17.07.2107
+v.0.0.1
+	+created index.html, page1.html, components.js, story.txt
+	+created function "pageInit()" and attach to event page load
+	-create buttons to change page bgcolor
+	
+***
