@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>aStGit - index</title>
+		<script src="components.js"></script>
 <script>	
 		document.addEventListener("DOMContentLoaded", pageInit);
 			
@@ -37,7 +38,18 @@
 		divContentEl.innerHTML = "Bye..";
 	}
 	
+	function fnHelloFromClass() {
+		ClassHelperForSpeak.sayHello('divContent');
+	}
 	
+	
+	function fnByeFromClass() {
+		ClassHelperForSpeak.sayGoodBye('divContent');
+	}
+	
+	function fnClearDiv(targetDivId) {
+		ClassHelperForSpeak.cleaning(targetDivId);
+	}
 </script>	
 	</head>
 <body>
@@ -51,8 +63,19 @@
 		<br>
 	</div>
 	<div id="divButtons" style="padding:10px; border:1px solid blue; margin-top:20px;">
+		Main:
+		<br>
+		<button id="btnHello" onclick="fnClearDiv('divContent');">Clear main div</button>
+		<hr>
+		used local functions:
 		<button id="btnHello" onclick="fnHello();">Hello</button>
 		<button id="btnBye" onclick="fnBye();">Bye</button>
+		<hr>
+		used ClassHelperForSpeak: 
+		<br>
+		<button id="btnHelloFromClass" onclick="fnHelloFromClass();">Hello</button>
+		<button id="btnByeFormclass" onclick="fnByeFromClass();">Bye</button>
+		
 		
 	</div>
 	
